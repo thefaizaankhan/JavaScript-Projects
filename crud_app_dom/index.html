@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Application | DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #212121; color: white;">
+  <h1>Student Management System</h1>
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="class" placeholder="Class" required>
+    <input type="text" id="section" placeholder="Section" required>
+    <input type="text" id="subject" placeholder="Subject" required>
+    <input type="text" id="address" placeholder="Address" required>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <table style="border: 1px solid white; margin-top: 20px;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Section</th>
+        <th>Subject</th>
+        <th>Address</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTable">
+      <!-- Student rows will be dynamically added here -->
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
